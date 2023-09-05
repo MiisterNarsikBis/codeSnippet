@@ -6,20 +6,6 @@ require_once 'class/CodeSnippet.php';
 $code = new CodeSnippet();
 
 
-$test = $code->search($bdd, 'php', ['hello']);
-
-dd($test);
-
-/*
-foreach ($test as $code) {
-    if($code instanceof CodeSnippet) {
-        dump($code->getTags());
-    }
-}
-*/
-//dd($code->save($bdd));
-
-//$bdd->exec('INSERT INTO code_snippet (langage, tags, code) VALUES ("' . $code->getLangage() . '", "' . $code->getTags() . '", "' . $code->getCode() . '")');
 ?>
 
 <!DOCTYPE html>
